@@ -6,7 +6,9 @@
         <div class="col-md-6">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h3 class="text-center">{{ __('Send Notification') }}</h3>
+                    @displayDate(auth()->user()->created_at, 'Y-m-d g:i')
+
+                    <h3 class="text-center">{{ __('Send Notification') }} {{ now() }}</h3>
                     <hr />
                     <form action="{{ route('notification') }}" method="post">
                         @csrf

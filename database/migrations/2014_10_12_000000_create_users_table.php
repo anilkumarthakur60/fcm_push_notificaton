@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->text('fcm_token')->nullable();
+            $table->sting('timezone')->nullable();
 
             $table->timestamps();
         });

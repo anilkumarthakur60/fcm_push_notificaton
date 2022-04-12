@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -163,6 +163,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        \Torann\GeoIP\GeoIPServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -191,6 +192,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
+
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 

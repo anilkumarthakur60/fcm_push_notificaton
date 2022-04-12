@@ -21,7 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'fcm_token'
+        'fcm_token',
+        'timezone',
+        'created_at'
     ];
 
     /**
