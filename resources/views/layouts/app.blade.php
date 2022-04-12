@@ -102,12 +102,12 @@
 
     <script>
         var firebaseConfig = {
-      apiKey: "AIzaSyCu709vqkvWoPcWjrZdWaC-cX98cgdbpiQ",
-    authDomain: "laravelfcmnotification.firebaseapp.com",
-    projectId: "laravelfcmnotification",
-    storageBucket: "laravelfcmnotification.appspot.com",
-    messagingSenderId: "157744396575",
-    appId: "1:157744396575:web:f077b0d2ed3ad346db582a"
+      apiKey: "xxxxxxxxxxxxxxxxxxxxx",
+    authDomain: "xxxxxxxxxxxxxxxxxxxx",
+    projectId: "laravxxxxxxxxxxxxxxxxxx",
+    storageBucket: "xxxxxxxxxxxxxxxxxxxx",
+    messagingSenderId: "15xxxxxxxxxxxxxx",
+    appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
