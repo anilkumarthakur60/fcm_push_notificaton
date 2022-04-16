@@ -92,6 +92,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
 
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
@@ -102,12 +103,12 @@
 
     <script>
         var firebaseConfig = {
-      apiKey: "xxxxxxxxxxxxxxxxxxxxx",
-    authDomain: "xxxxxxxxxxxxxxxxxxxx",
-    projectId: "laravxxxxxxxxxxxxxxxxxx",
-    storageBucket: "xxxxxxxxxxxxxxxxxxxx",
-    messagingSenderId: "15xxxxxxxxxxxxxx",
-    appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   apiKey: "AIzaSyCu709vqkvWoPcWjrZdWaC-cX98cgdbpiQ",
+    authDomain: "laravelfcmnotification.firebaseapp.com",
+    projectId: "laravelfcmnotification",
+    storageBucket: "laravelfcmnotification.appspot.com",
+    messagingSenderId: "157744396575",
+    appId: "1:157744396575:web:1a7443b1f0747d4edb582a"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);

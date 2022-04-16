@@ -28,21 +28,19 @@ class HomeController extends Controller
     public function index()
     {
 
-        // $fcmTokens = User::whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
+        $fcmTokens = User::whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
+        Larafirebase::withTitle('Test Title')
+            ->withBody('Test body')
+            ->withImage('https://firebase.google.com/images/social.png')
+            ->withIcon('https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png')
+            ->withClickAction('/home')
+            ->withPriority('high')
+            ->withAdditionalData([
+                'routing_key' => 'some_screen',
+                'routing_value' => 42
+            ])->sendMessage($fcmTokens);
 
-        $fcmTokens = array();
 
-        // auth()->user()->update(['fcm_token' => null]);
-
-        // array_push($fcmTokens, auth()->user()->fcm_token);
-        // $user =    User::where('email', 'aniltest60@gmail.com')->first();
-        // array_push($fcmTokens, $user->fcm_token);
-
-        // dd($fcmTokens);
-
-        Larafirebase::withTitle('hello title')
-            ->withBody('hello body')
-            ->sendMessage($fcmTokens);
         return view('home');
     }
     public function updateToken(Request $request)
